@@ -1,0 +1,46 @@
+.link {
+  background-color: $color-ecru-white;
+  transition: background-color 0.3s ease;
+  outline: none;
+
+  &:hover, &:focus, &:focus-visible {
+    background-color: $color-chrome-white;
+  }
+}
+
+.link--transparent {
+  background-color: transparent;
+  text-decoration: none;
+  outline: none;
+
+  &:hover, &:focus, &:focus-visible {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+}
+
+.link--svg-dark {
+  color: $color-trout;
+  background-color: transparent;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  outline: none;
+
+  &:hover, &:focus, &:focus-visible {
+    background-color: transparent;
+    color: $color-white;
+  }
+}
+
+.link--svg-light {
+  color: $color-blue-charcoa;
+  background-color: transparent;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  outline: none;
+
+  &:hover, &:focus, &:focus-visible {
+    background-color: transparent;
+    color: $color-ecru-white;
+  }
+}

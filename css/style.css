@@ -381,6 +381,49 @@ a {
 
 /* Blocks */
 /* ------------------------------------ */
+.link {
+  background-color: #d6d2c4;
+  transition: background-color 0.3s ease;
+  outline: none;
+}
+.link:hover, .link:focus, .link:focus-visible {
+  background-color: #cdc8b6;
+}
+
+.link--transparent {
+  background-color: transparent;
+  text-decoration: none;
+  outline: none;
+}
+.link--transparent:hover, .link--transparent:focus, .link--transparent:focus-visible {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.link--svg-dark {
+  color: #4a5157;
+  background-color: transparent;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  outline: none;
+}
+.link--svg-dark:hover, .link--svg-dark:focus, .link--svg-dark:focus-visible {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.link--svg-light {
+  color: #1d252d;
+  background-color: transparent;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  outline: none;
+}
+.link--svg-light:hover, .link--svg-light:focus, .link--svg-light:focus-visible {
+  background-color: transparent;
+  color: #d6d2c4;
+}
+
 .header {
   padding: 25px 0 23px;
   border-bottom: 1px solid #e2e2e2;
@@ -774,6 +817,10 @@ a {
     width: 88px;
   }
 }
+.footer__logo-link:hover, .footer__logo-link:focus, .footer__logo-link:focus-visible {
+  background-color: transparent;
+  color: #4a5157;
+}
 .footer__logo {
   width: 114px;
   height: 26px;
@@ -784,6 +831,7 @@ a {
   gap: 10px;
 }
 .footer__contacts-mail {
+  width: fit-content;
   font-size: 16px;
   line-height: 24px;
 }
@@ -795,6 +843,7 @@ a {
   }
 }
 .footer__contacts-tel {
+  width: fit-content;
   font-size: 22px;
   line-height: 24px;
   letter-spacing: -0.02em;
